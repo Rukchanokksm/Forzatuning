@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>forza tune</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="topnav">
+      <div class="topheader container align-items-center" style="padding-top: 1.8rem; padding-bottom: 0.5rem;">
+        <div class="row text-center justify-content-center" style="font-size: 18px;">
+          <img class="col m-3" src="img/logoforza.png" alt="logo">
+          <a href="#" class="col m-3" style="text-decoration-line: none;">How to tune</a>
+          <div class="col m-3 position-relative">
+            <a href="#" class="" style="text-decoration-line: none;">Premium tune</a>
+            <p class="position-absolute text-danger">New</p>
+          </div>
+          <a href="#" class="col m-3" style="text-decoration-line: none;">Fast Tune</a>
+          <a href="#" class="col m-3" style="text-decoration-line: none;">Contract</a>
+          <div class="col m-3">
+            <a href="#" class="" style="text-decoration-line: none;">Log in</a>
+            <img src="img/logicon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="headertext container-fluid pt-5">
+      <h1 class="text-center">Fast tune</h1>
+    </div>
+
+    <section class="maincontent container mt-5">
+      <div class="justify-content-center text-center">
+        <div class="row">
+          <p class="col-6">Weigth Total</p>
+          <div class="container col-6">
+            <input type="number" id="weigth" size="8" class="align-middle" style="width: 10rem; height: 2.2rem; margin-top: 16px;"></input>
+          </div>
+        </div>  
+      </div>
+      <div class="justify-content-center text-center">
+        <div class="row">
+          <p class="col-6">Belance</p>
+          <div class="container col-6">
+            
+              <input class="container" type="text" id="Balance" size="10" minlength="1" maxlength="4" style="width: 10rem; height: 2.2rem; margin-top: 16px"></input>
+          
+          </div>
+          
+        </div>  
+      </div>
+      <div class="justify-content-center text-center">
+        <div class="row">
+          <p class="col-6">High (Font & Rear)</p>
+          <div class="container col-6">
+            <input class="container" type="text" id="highF" size="10" minlength="1" maxlength="4" style="width: 4.9rem; height: 2.2rem; margin-top: 16px"></input>
+            <input class="container" type="text" id="highR" size="10" minlength="1" maxlength="4" style="width: 4.9rem; height: 2.2rem; margin-top: 16px"></input>
+          </div>
+        </div>  
+      </div>
+      <div class="container justify-content-center text-center">
+        <div class="row">
+          <label class="col-6 " for="typeRace" style="font-size: 32px;">Select race type</label>
+          <select class="col-6" name="typeforRace"  id="select" style="width: 14rem; height: 2.2rem; margin-left: 13.5rem; margin-top: 16px">
+            <option value="Race">Race</option>
+            <option value="street" class="text-danger">Street (not available)</option>
+            <option value="Rally">Rally</option>
+            <option value="offroad" class="text-danger">offroad (not available)</option>
+          </select>
+        </div>
+      </div>
+      
+        <div class=" justify-content-center mt-5 text-center">
+        <button class="btnsummit container" onclick="result()" style="width: 238px;">Enter
+        </button>
+        </div>
+    </section>
+          
+    <section>
+      <table class="table table-bordered table-hover container mt-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Anti-rollbar</th>
+            <th scope="col">Spring</th>
+            <th scope="col">Damping</th>
+            <th scope="col">Rebound</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Font</th>
+            <td id="atRbFnt"></td>
+            <td id="springf"></td>
+            <td id="dampingF"></td>
+            <td id="reboundf"></td>         
+          </tr>
+          <tr>
+            <th scope="row">Rear</th>
+            <td id="atRbRar"></td>
+            <td id="springr"></td>
+            <td id="dampingR"></td>
+            <td id="reboundr"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+    </section>
+        
+     
+    <script src="/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
